@@ -12,7 +12,7 @@ char *_memset(char *t, char c, unsigned int o)
 	unsigned int j;
 
 	for (j = 0; j < o; j++)
-		s[j] = c;
+		t[j] = c;
 	return (t);
 }
 
@@ -56,7 +56,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	old_size = old_size < new_size ? old_size : new_size;
 	while (old_size--)
-		p[old_size] = ((char *)ptr)[old_size];
+		q[old_size] = ((char *)ptr)[old_size];
 	free(ptr);
 	return (q);
 }

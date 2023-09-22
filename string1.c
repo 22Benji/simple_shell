@@ -82,7 +82,7 @@ int _putchar(char d)
 		j = 0;
 	}
 	if (d != BUF_FLUSH)
-		buf[i++] = d;
+		buf[j++] = d;
 	return (1);
 }
 
